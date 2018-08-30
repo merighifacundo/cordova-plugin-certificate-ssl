@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-certificate-ssl",
+  "version": "1.0.0",
+  "description": "This is a SSL security plugin for Certificates and Cert Pin",
+  "cordova": {
+    "id": "cordova-plugin-certificate",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merighifacundo/cordova-plugin-certificate-ssl"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "certificate",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Facundo Merighi",
+  "license": "Apache-2",
+  "bugs": {
+    "url": "https://github.com/merighifacundo/cordova-plugin-certificate-ssl/issues"
+  },
+  "homepage": "https://github.com/merighifacundo/cordova-plugin-certificate-ssl"
+}
