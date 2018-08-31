@@ -4,7 +4,6 @@ import android.content.res.Resources;
 import android.support.annotation.RawRes;
 import android.util.Log;
 
-import com.humana.enrollmenthub.R;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
