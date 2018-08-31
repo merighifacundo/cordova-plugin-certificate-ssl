@@ -75,11 +75,6 @@ public class CertificatePlugin extends CordovaPlugin {
         }
 
         CertificatePinner certificatePinner = new CertificatePinner.Builder()
-                /*
-                .add(domainName, "sha256/xy4d2MO+glrEfaXTQjKczXoVB+lYEkpy1Hqfjqk52pE=") //CN=s1.humana.com,OU=HUM,O=Humana Inc.,L=Louisville,ST=Kentucky,C=US (Expires: Thursday, October 4, 2018 at 1:44:55 PM Eastern )
-                .add(domainName, "sha256/980Ionqp3wkYtN9SZVgMzuWQzJta1nfxNPwTem1X0uc=") //CN=Entrust Certification Authority - L1K,OU=(c) 2012 Entrust\, Inc. - for authorized use only,OU=See www.entrust.net/legal-terms,O=Entrust\, Inc.,C=US
-                .add(domainName, "sha256/du6FkDdMcVQ3u8prumAo6t3i3G27uMP2EOhR8R0at/U") //CN=Entrust Root Certification Authority - G2,OU=(c) 2009 Entrust\, Inc. - for authorized use only,OU=See www.entrust.net/legal-terms,O=Entrust\, Inc.,C=US
-                */
                 .add(domainName, list.toArray(new String[list.size()]))
                 .build();
 
