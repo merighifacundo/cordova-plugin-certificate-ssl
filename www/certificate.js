@@ -6,7 +6,7 @@ module.exports = {
         exec(onSuccess, onError, 'Certificate', 'isCertificate', []);
     },
     isPinCertificate: function(onSuccess, onError) {
-        exec(onSuccess, onError, 'Certificate', 'isCertificate', []);
+        exec(onSuccess, onError, 'Certificate', 'isPinCertificate', []);
     }
 };
 

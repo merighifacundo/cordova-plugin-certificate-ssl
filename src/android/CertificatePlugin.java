@@ -146,4 +146,3 @@ public class CertificatePlugin extends CordovaPlugin {
 
 
 }
-    
