@@ -1,7 +1,6 @@
 package com.cordova.certificate;
 
-import android.content.res.Resources;
-import android.support.annotation.RawRes;
+
 import android.util.Log;
 
 
@@ -13,7 +12,6 @@ import org.json.JSONException;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;
-import java.lang.reflect.Field;
 import java.net.URL;
 import java.security.KeyStore;
 import java.security.cert.Certificate;
@@ -33,9 +31,8 @@ import okhttp3.Request;
 public class CertificatePlugin extends CordovaPlugin {
     private final String LOG_TAG = "Certificate";
 
-    private static int getResId(String resName) {
-
-        return Resources.getSystem().getIdentifier(resName, "raw", "android");
+    private int getResId(String resName) {
+        return cordova.getActivity().getResources().getIdentifier(resName, "raw", cordova.getActivity().getPackageName());
     }
 
 
@@ -43,7 +40,7 @@ public class CertificatePlugin extends CordovaPlugin {
     public boolean execute(final String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException {
         // throws JSONException
 
-        if (action.equals("isCertificate")) {
+         if (action.equals("isCertificate")) {
             isCertificateValid(callbackContext);
             return true;
 
